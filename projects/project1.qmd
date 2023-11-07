@@ -21,21 +21,22 @@ The goal of this assignment is to practice some of the skills we have been learn
 Please use this Quarto file (`.qmd`) and fill in the requested components by adding the URLs pointing to the private and public repositories and deployed websites. Render this file to a **HTML file** and submit your HTML file to the dropbox on CoursePlus. Please **show all your code**, if relevant to a section.
 
 
+
 # Part 1
 
 Complete the Git & GitHub Fundamentals Starter course. The link to create a private GitHub repository for yourself to complete the course will be posted in CoursePlus. When you are done, add the link to the GitHub repo here: 
 
-- **Link to your GitHub repository**:
+- **Link to your GitHub repository**:✅
 
-https://github.com/jhu-statprogramming-fall-2023/git-github-fundamentals-calebhallinan
+[https://github.com/jhu-statprogramming-fall-2023/git-github-fundamentals-calebhallinan](https://github.com/jhu-statprogramming-fall-2023/git-github-fundamentals-calebhallinan)
 
-NOTE: Do we just add this here???
+
 
 # Part 2
 
-1. Read this blogpost titled [Building a brand as a scientist](https://www.stephaniehicks.com/blog/building-a-brand-as-a-scientist). 
-2. Reflect on the questions in the "Defining your brand" section. 
-3. Write two paragraphs (4-6 sentences) max here answering one (or more) of the questions asked in the section above.
+1. Read this blogpost titled [Building a brand as a scientist](https://www.stephaniehicks.com/blog/building-a-brand-as-a-scientist). ✅
+2. Reflect on the questions in the "Defining your brand" section. ✅
+3. Write two paragraphs (4-6 sentences) max here answering one (or more) of the questions asked in the section above.✅
 
 
 Caleb's Thoughts:
@@ -43,6 +44,7 @@ Caleb's Thoughts:
 I am currently a first-year BME PhD student with the goal of becoming a teaching professor one day. My dream would be to work with college students everyday by helping them achieve whatever their dream is :) In the meantime, I am passionate about making computational software user-friendly for biologists who are not as tech-savvy. This can take many forms like making easy-to-use GUIs, detailed tutorials and instructions, or maybe holding online classes going through an example analysis! 
 
 I feel most motivated by the thought of serving others, developing a warm and friendly community (inside and outside of research/school), doing some fun analysis on interesting data, and the thought of making some computational software that will end up helping people :) I hope to enrich and fulfill these passions throughout my graduate school tenure and beyond!
+
 
 
 # Part 3
@@ -53,37 +55,41 @@ Next, with the reflections from Part 2 in mind, you will create a public GitHub 
 
 ## 1. Create a GitHub repo for your website
 
-Create a new public GitHub repository titled `biostat777-intro-<firstname>-<lastname>` (where you replace `<firstname>` with your first name and `<lastname>` with your last name) in your own personal GitHub account (e.g. `https://github.com/<yourgithubusername>/biostat777-intro-<firstname>-<lastname>`).
+Create a new public GitHub repository titled `biostat777-intro-<firstname>-<lastname>` (where you replace `<firstname>` with your first name and `<lastname>` with your last name) in your own personal GitHub account (e.g. `https://github.com/<yourgithubusername>/biostat777-intro-<firstname>-<lastname>`).✅
+
+Caleb Note: I already have a website that uses quarto, so you can find the github repo for it here: https://github.com/calebhallinan/calebhallinan.github.io
+
+Both Dr. Hicks and Joe said this was fine!
 
 ## 2. Build a website using Quarto
 
 Create a new project locally within RStudio and build a website for yourself. Your website should include the following: 
 
-1. A home/landing page. This is home page that someone will land on your website. At minimum it should include your name, a short summary about yourself (max 2-3 sentences), and a picture of something you enjoy to do for fun (or a picture of yourself if you are comfortable sharing one). 
-2. A page titled 'About'. This page should describe who you are in greater detail. It could include your professional interests and your educational and/or professional background and/or experience. It could also include any personal information you feel conformable sharing on the website. 
+1. A home/landing page. This is home page that someone will land on your website. At minimum it should include your name, a short summary about yourself (max 2-3 sentences), and a picture of something you enjoy to do for fun (or a picture of yourself if you are comfortable sharing one). ✅
+2. A page titled 'About'. This page should describe who you are in greater detail. It could include your professional interests and your educational and/or professional background and/or experience. It could also include any personal information you feel conformable sharing on the website. ✅
 3. A data analysis page called 'Example analysis'. You can pick any dataset you wish you analyze. In this webpage, you will analyze a dataset and summarize the results. The requirements for this webpage are the following: 
-    - You must describe what is the question you aim to answer with the data and data analysis. 
-    - You must describe who is the intended audience for the data analysis. 
-    - You must describe and link to where the original data come from that you chose. 
-    - You must include a link to a data dictionary for the data or create one inside the webpage. 
-    - Your analysis must include some minimal form of data wrangling with you using at least five different functions from `dplyr` or `tidyr`. 
-    - Your analysis should include at least three plots with you using at least three different `geom_*()` functions from `ggplot2` (or another package with `geom_*()` functions). 
-    - Plots should have titles, subtitles, captions, and human-understandable axis labels. 
-    - At least one plot should using a type of faceting (`facet_grid()` or `facet_wrap()`). 
-    - Your analysis must include one image or table (not one you created yourself, but one you have saved locally or one from the web). 
-    - Your analysis must include at least two different [callout blocks](https://quarto.org/docs/authoring/callouts.html).
-    - Your analysis must include a `.bib` file, which you use to reference at least three unique citations. For example, it could be to a website or paper from where the original data came from or it could be to a paper describing a method you are using to analyze the data. 
-    - Your analysis must include the use of at least 1 [margin content](https://www.stephaniehicks.com/jhustatprogramming2023/posts/2023-10-26-build-website/#margin-content). 
-    - You must summarize your analysis and/or results with a paragraph (4-6 sentences).
-    - At the end of the data analysis, list out each of the functions you used from each of the packages (`dplyr`, `tidyr`, and `ggplot2`) to help the TA with respect to making sure you met all the requirements described above. 
+    - You must describe what is the question you aim to answer with the data and data analysis. ✅
+    - You must describe who is the intended audience for the data analysis. ✅
+    - You must describe and link to where the original data came from that you chose. ✅
+    - You must include a link to a data dictionary for the data or create one inside the webpage. ✅
+    - Your analysis must include some minimal form of data wrangling with you using at least five different functions from `dplyr` or `tidyr`. ✅
+    - Your analysis should include at least three plots with you using at least three different `geom_*()` functions from `ggplot2` (or another package with `geom_*()` functions). ✅
+    - Plots should have titles, subtitles, captions, and human-understandable axis labels. ✅
+    - At least one plot should using a type of faceting (`facet_grid()` or `facet_wrap()`). ✅
+    - Your analysis must include one image or table (not one you created yourself, but one you have saved locally or one from the web). ✅
+    - Your analysis must include at least two different [callout blocks](https://quarto.org/docs/authoring/callouts.html).✅
+    - Your analysis must include a `.bib` file, which you use to reference at least three unique citations. For example, it could be to a website or paper from where the original data came from or it could be to a paper describing a method you are using to analyze the data. ✅
+    - Your analysis must include the use of at least 1 [margin content](https://www.stephaniehicks.com/jhustatprogramming2023/posts/2023-10-26-build-website/#margin-content). ✅
+    - You must summarize your analysis and/or results with a paragraph (4-6 sentences).✅
+    - At the end of the data analysis, list out each of the functions you used from each of the packages (`dplyr`, `tidyr`, and `ggplot2`) to help the TA with respect to making sure you met all the requirements described above. ✅
 
 ## 3. Include a `README.md` file
 
-Your local repository should include a `README.md` file describing who is the author of the website and a link to the website after it has been deployed. Other things you might include are the technical details for how the website was created and/or deployed. 
+Your local repository should include a `README.md` file describing who is the author of the website and a link to the website after it has been deployed. Other things you might include are the technical details for how the website was created and/or deployed. ✅
 
 ## 4. Deploy your website
 
-Deploy your website using [Quarto Pub](https://quarto.org/docs/publishing/quarto-pub.html), [GitHub pages](https://quarto.org/docs/publishing/github-pages.html), or [Netlify](https://quarto.org/docs/publishing/netlify.html). (**Note**: Deploying your website to RPubs will not be accepted).
+Deploy your website using [Quarto Pub](https://quarto.org/docs/publishing/quarto-pub.html), [GitHub pages](https://quarto.org/docs/publishing/github-pages.html), or [Netlify](https://quarto.org/docs/publishing/netlify.html). (**Note**: Deploying your website to RPubs will not be accepted).✅
 
 ## 5. Share your website
 
@@ -91,20 +97,22 @@ Go to the Discussion Board in CoursePlus and write a short post with a link (URL
 
 As you read the introductions from other folks in the class, feel free to comment/reply using Discussion board.
 
-- **Link to your GitHub repository**: 
+- **Link to your GitHub repository**: ✅
 
-https://github.com/calebhallinan/calebhallinan.github.io
+[https://github.com/calebhallinan/calebhallinan.github.io](https://github.com/calebhallinan/calebhallinan.github.io)
 
-- **Link to your deployed website**: 
+- **Link to your deployed website**: ✅
 
-https://calebhallinan.github.io/
+[https://calebhallinan.github.io/](https://calebhallinan.github.io/)
+
+
 
 # Part 4
 
-1. Use [`wget`](https://www.gnu.org/software/wget) to download four files that end in `.fastq` from [here](https://github.com/stephaniehicks/jhustatprogramming2023/tree/main/data). 
-2. Create a directory to download the data. The top level directory should be called `raw_data` and there should be a sub-level directory called `fastq`. The command you write should force the creation of both directories at the same time if either of them do not exist yet.
-3. Move all the `.fastq` files into the `fastq` sub-level directory. 
-4. List all the `.fastq` files that end in a 12 or 13. 
+1. Use [`wget`](https://www.gnu.org/software/wget) to download four files that end in `.fastq` from [here](https://github.com/stephaniehicks/jhustatprogramming2023/tree/main/data). ✅
+2. Create a directory to download the data. The top level directory should be called `raw_data` and there should be a sub-level directory called `fastq`. The command you write should force the creation of both directories at the same time if either of them do not exist yet.✅
+3. Move all the `.fastq` files into the `fastq` sub-level directory. ✅
+4. List all the `.fastq` files that end in a 12 or 13. ✅
 5. Search for the string `NNNN` in the `SRR1039512_subset_1.fastq` file. In addition to returning the matched line in the `.fastq` file, your output should also return the two lines before and the four lines after the matching line.  
 6. Write a for loop in the shell that iterates over each `.fastq` file. For each `.fastq` file, do the following. In the first 1000 rows for each file, count the number of lines where the "@" symbol appears. Your final output should be four numbers printed to the screen. 
 
@@ -112,4 +120,40 @@ https://calebhallinan.github.io/
 ```{bash}
 # Add your solution here
 
+# 1. use wget
+wget https://github.com/stephaniehicks/jhustatprogramming2023/tree/main/data/SRR1039508_subset_1.fastq
+wget https://github.com/stephaniehicks/jhustatprogramming2023/tree/main/data/SRR1039509_subset_1.fastq
+wget https://github.com/stephaniehicks/jhustatprogramming2023/tree/main/data/SRR1039512_subset_1.fastq
+wget https://github.com/stephaniehicks/jhustatprogramming2023/tree/main/data/SRR1039513_subset_1.fastq
+
+# 2. make new directory
+mkdir -p raw_data/fastq
+
+# 3. move files
+mv *.fastq* raw_data/fastq/
+
+# 4. list files ending in 12 or 13
+ls raw_data/fastq/*{12,13}_subset_1.fastq
+
+# 5. search for strings
+grep -A 4 -B 2 NNNN SRR1039512_subset_1.fastq
+
+# 6. for loop to count @
+for file in *.fastq; do
+  count=$(head -n 1000 "$file" | grep -c "@")
+  echo "$count"
+done
+
+
 ```
+
+
+
+Questions
+1. step 4 - use the name of the file? cause non of them end in 12/13
+
+
+
+
+
+
