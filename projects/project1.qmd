@@ -41,9 +41,9 @@ Complete the Git & GitHub Fundamentals Starter course. The link to create a priv
 
 Caleb's Thoughts:
 
-I am currently a first-year BME PhD student with the goal of becoming a teaching professor one day. My dream would be to work with college students everyday by helping them achieve whatever their dream is :) In the meantime, I am passionate about making computational software user-friendly for biologists who are not as tech-savvy. This can take many forms like making easy-to-use GUIs, detailed tutorials and instructions, or maybe holding online classes going through an example analysis! 
+I am currently a first-year BME PhD student with the goal of becoming a teaching professor one day. My dream would be to work with college students everyday by helping them achieve whatever their dream is. 😄 In the meantime, I am passionate about making computational software user-friendly for biologists who are not as tech-savvy. This can take many forms like making easy-to-use GUIs, detailed tutorials and instructions, or maybe holding online classes going through an example analysis! 
 
-I feel most motivated by the thought of serving others, developing a warm and friendly community (inside and outside of research/school), doing some fun analysis on interesting data, and the thought of making some computational software that will end up helping people :) I hope to enrich and fulfill these passions throughout my graduate school tenure and beyond!
+I feel most motivated by the thought of serving others, developing a warm and friendly community (inside and outside of research/school), doing some fun analysis on interesting data, and the thought of making some computational software that will end up helping others. I hope to enrich and fulfill these passions throughout my graduate school tenure and beyond!
 
 
 
@@ -57,7 +57,7 @@ Next, with the reflections from Part 2 in mind, you will create a public GitHub 
 
 Create a new public GitHub repository titled `biostat777-intro-<firstname>-<lastname>` (where you replace `<firstname>` with your first name and `<lastname>` with your last name) in your own personal GitHub account (e.g. `https://github.com/<yourgithubusername>/biostat777-intro-<firstname>-<lastname>`).✅
 
-Caleb Note: I already have a website that uses quarto, so you can find the github repo for it here: https://github.com/calebhallinan/calebhallinan.github.io
+Caleb Note: I already have a website that uses quarto, so you can find the github repo for it here: [https://github.com/calebhallinan/calebhallinan.github.io](https://github.com/calebhallinan/calebhallinan.github.io)
 
 Both Dr. Hicks and Joe said this was fine!
 
@@ -82,6 +82,10 @@ Create a new project locally within RStudio and build a website for yourself. Yo
     - Your analysis must include the use of at least 1 [margin content](https://www.stephaniehicks.com/jhustatprogramming2023/posts/2023-10-26-build-website/#margin-content). ✅
     - You must summarize your analysis and/or results with a paragraph (4-6 sentences).✅
     - At the end of the data analysis, list out each of the functions you used from each of the packages (`dplyr`, `tidyr`, and `ggplot2`) to help the TA with respect to making sure you met all the requirements described above. ✅
+
+✅✅✅
+NOTE: The Example Analysis is located in my Blog section!!!
+✅✅✅
 
 ## 3. Include a `README.md` file
 
@@ -113,44 +117,48 @@ As you read the introductions from other folks in the class, feel free to commen
 2. Create a directory to download the data. The top level directory should be called `raw_data` and there should be a sub-level directory called `fastq`. The command you write should force the creation of both directories at the same time if either of them do not exist yet.✅
 3. Move all the `.fastq` files into the `fastq` sub-level directory. ✅
 4. List all the `.fastq` files that end in a 12 or 13. ✅
-5. Search for the string `NNNN` in the `SRR1039512_subset_1.fastq` file. In addition to returning the matched line in the `.fastq` file, your output should also return the two lines before and the four lines after the matching line.  
-6. Write a for loop in the shell that iterates over each `.fastq` file. For each `.fastq` file, do the following. In the first 1000 rows for each file, count the number of lines where the "@" symbol appears. Your final output should be four numbers printed to the screen. 
+5. Search for the string `NNNN` in the `SRR1039512_subset_1.fastq` file. In addition to returning the matched line in the `.fastq` file, your output should also return the two lines before and the four lines after the matching line. ✅
+6. Write a for loop in the shell that iterates over each `.fastq` file. For each `.fastq` file, do the following. In the first 1000 rows for each file, count the number of lines where the "@" symbol appears. Your final output should be four numbers printed to the screen. ✅
 
 
-```{bash}
-# Add your solution here
-
+```{.bash}
 # 1. use wget
-wget https://github.com/stephaniehicks/jhustatprogramming2023/tree/main/data/SRR1039508_subset_1.fastq
-wget https://github.com/stephaniehicks/jhustatprogramming2023/tree/main/data/SRR1039509_subset_1.fastq
-wget https://github.com/stephaniehicks/jhustatprogramming2023/tree/main/data/SRR1039512_subset_1.fastq
-wget https://github.com/stephaniehicks/jhustatprogramming2023/tree/main/data/SRR1039513_subset_1.fastq
-
-# 2. make new directory
-mkdir -p raw_data/fastq
-
-# 3. move files
-mv *.fastq* raw_data/fastq/
-
-# 4. list files ending in 12 or 13
-ls raw_data/fastq/*{12,13}_subset_1.fastq
-
-# 5. search for strings
-grep -A 4 -B 2 NNNN SRR1039512_subset_1.fastq
-
-# 6. for loop to count @
-for file in *.fastq; do
-  count=$(head -n 1000 "$file" | grep -c "@")
-  echo "$count"
-done
-
-
+wget https://raw.githubusercontent.com/stephaniehicks/jhustatprogramming2023/main/data/SRR1039508_subset_1.fastq
+wget https://raw.githubusercontent.com/stephaniehicks/jhustatprogramming2023/main/data/SRR1039509_subset_1.fastq
+wget https://raw.githubusercontent.com/stephaniehicks/jhustatprogramming2023/main/data/SRR1039512_subset_1.fastq
+wget https://raw.githubusercontent.com/stephaniehicks/jhustatprogramming2023/main/data/SRR1039513_subset_1.fastq
 ```
 
 
+```{.bash}
+# 2. make new directory
+mkdir -p raw_data/fastq
+```
 
-Questions
-1. step 4 - use the name of the file? cause non of them end in 12/13
+
+```{.bash}
+# 3. move files
+mv *.fastq* raw_data/fastq/
+```
+
+```{bash}
+# 4. list files ending in 12 or 13
+# NOTE: I am assuming you meant this part excluding the _subset_1
+ls raw_data/fastq/*{12,13}_subset_1.fastq
+```
+
+```{bash}
+# 5. search for strings
+grep -A 4 -B 2 NNNN raw_data/fastq/SRR1039512_subset_1.fastq
+```
+
+```{bash}
+# 6. for loop to count @
+for file in raw_data/fastq/*.fastq; do
+  count=$(head -n 1000 "$file" | grep -c "@")
+  echo "$count"
+done
+```
 
 
 

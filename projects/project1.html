@@ -146,8 +146,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Write two paragraphs (4-6 sentences) max here answering one (or more) of the questions asked in the section above.✅</li>
 </ol>
 <p>Caleb’s Thoughts:</p>
-<p>I am currently a first-year BME PhD student with the goal of becoming a teaching professor one day. My dream would be to work with college students everyday by helping them achieve whatever their dream is :) In the meantime, I am passionate about making computational software user-friendly for biologists who are not as tech-savvy. This can take many forms like making easy-to-use GUIs, detailed tutorials and instructions, or maybe holding online classes going through an example analysis!</p>
-<p>I feel most motivated by the thought of serving others, developing a warm and friendly community (inside and outside of research/school), doing some fun analysis on interesting data, and the thought of making some computational software that will end up helping people :) I hope to enrich and fulfill these passions throughout my graduate school tenure and beyond!</p>
+<p>I am currently a first-year BME PhD student with the goal of becoming a teaching professor one day. My dream would be to work with college students everyday by helping them achieve whatever their dream is. 😄 In the meantime, I am passionate about making computational software user-friendly for biologists who are not as tech-savvy. This can take many forms like making easy-to-use GUIs, detailed tutorials and instructions, or maybe holding online classes going through an example analysis!</p>
+<p>I feel most motivated by the thought of serving others, developing a warm and friendly community (inside and outside of research/school), doing some fun analysis on interesting data, and the thought of making some computational software that will end up helping others. I hope to enrich and fulfill these passions throughout my graduate school tenure and beyond!</p>
 </section>
 <section id="part-3" class="level1">
 <h1>Part 3</h1>
@@ -156,7 +156,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="create-a-github-repo-for-your-website" class="level2">
 <h2 class="anchored" data-anchor-id="create-a-github-repo-for-your-website">1. Create a GitHub repo for your website</h2>
 <p>Create a new public GitHub repository titled <code>biostat777-intro-&lt;firstname&gt;-&lt;lastname&gt;</code> (where you replace <code>&lt;firstname&gt;</code> with your first name and <code>&lt;lastname&gt;</code> with your last name) in your own personal GitHub account (e.g.&nbsp;<code>https://github.com/&lt;yourgithubusername&gt;/biostat777-intro-&lt;firstname&gt;-&lt;lastname&gt;</code>).✅</p>
-<p>Caleb Note: I already have a website that uses quarto, so you can find the github repo for it here: https://github.com/calebhallinan/calebhallinan.github.io</p>
+<p>Caleb Note: I already have a website that uses quarto, so you can find the github repo for it here: <a href="https://github.com/calebhallinan/calebhallinan.github.io">https://github.com/calebhallinan/calebhallinan.github.io</a></p>
 <p>Both Dr.&nbsp;Hicks and Joe said this was fine!</p>
 </section>
 <section id="build-a-website-using-quarto" class="level2">
@@ -183,6 +183,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>At the end of the data analysis, list out each of the functions you used from each of the packages (<code>dplyr</code>, <code>tidyr</code>, and <code>ggplot2</code>) to help the TA with respect to making sure you met all the requirements described above. ✅</li>
 </ul></li>
 </ol>
+<p>✅✅✅ NOTE: The Example Analysis is located in my Blog section!!! ✅✅✅</p>
 </section>
 <section id="include-a-readme.md-file" class="level2">
 <h2 class="anchored" data-anchor-id="include-a-readme.md-file">3. Include a <code>README.md</code> file</h2>
@@ -213,105 +214,53 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Create a directory to download the data. The top level directory should be called <code>raw_data</code> and there should be a sub-level directory called <code>fastq</code>. The command you write should force the creation of both directories at the same time if either of them do not exist yet.✅</li>
 <li>Move all the <code>.fastq</code> files into the <code>fastq</code> sub-level directory. ✅</li>
 <li>List all the <code>.fastq</code> files that end in a 12 or 13. ✅</li>
-<li>Search for the string <code>NNNN</code> in the <code>SRR1039512_subset_1.fastq</code> file. In addition to returning the matched line in the <code>.fastq</code> file, your output should also return the two lines before and the four lines after the matching line.<br>
-</li>
-<li>Write a for loop in the shell that iterates over each <code>.fastq</code> file. For each <code>.fastq</code> file, do the following. In the first 1000 rows for each file, count the number of lines where the “@” symbol appears. Your final output should be four numbers printed to the screen.</li>
+<li>Search for the string <code>NNNN</code> in the <code>SRR1039512_subset_1.fastq</code> file. In addition to returning the matched line in the <code>.fastq</code> file, your output should also return the two lines before and the four lines after the matching line. ✅</li>
+<li>Write a for loop in the shell that iterates over each <code>.fastq</code> file. For each <code>.fastq</code> file, do the following. In the first 1000 rows for each file, count the number of lines where the “@” symbol appears. Your final output should be four numbers printed to the screen. ✅</li>
 </ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. use wget</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://raw.githubusercontent.com/stephaniehicks/jhustatprogramming2023/main/data/SRR1039508_subset_1.fastq</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://raw.githubusercontent.com/stephaniehicks/jhustatprogramming2023/main/data/SRR1039509_subset_1.fastq</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://raw.githubusercontent.com/stephaniehicks/jhustatprogramming2023/main/data/SRR1039512_subset_1.fastq</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://raw.githubusercontent.com/stephaniehicks/jhustatprogramming2023/main/data/SRR1039513_subset_1.fastq</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. make new directory</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> <span class="at">-p</span> raw_data/fastq</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. move files</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mv</span> <span class="pp">*</span>.fastq<span class="pp">*</span> raw_data/fastq/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Add your solution here</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. use wget</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://github.com/stephaniehicks/jhustatprogramming2023/tree/main/data/SRR1039508_subset_1.fastq</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://github.com/stephaniehicks/jhustatprogramming2023/tree/main/data/SRR1039509_subset_1.fastq</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://github.com/stephaniehicks/jhustatprogramming2023/tree/main/data/SRR1039512_subset_1.fastq</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://github.com/stephaniehicks/jhustatprogramming2023/tree/main/data/SRR1039513_subset_1.fastq</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. make new directory</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> <span class="at">-p</span> raw_data/fastq</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. move files</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">mv</span> <span class="pp">*</span>.fastq<span class="pp">*</span> raw_data/fastq/</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. list files ending in 12 or 13</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> raw_data/fastq/<span class="pp">*</span><span class="dt">{12</span><span class="op">,</span><span class="dt">13}</span>_subset_1.fastq</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co"># 5. search for strings</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="fu">grep</span> <span class="at">-A</span> 4 <span class="at">-B</span> 2 NNNN SRR1039512_subset_1.fastq</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co"># 6. for loop to count @</span></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> file <span class="kw">in</span> <span class="pp">*</span>.fastq<span class="kw">;</span> <span class="cf">do</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>  <span class="va">count</span><span class="op">=</span><span class="va">$(</span><span class="fu">head</span> <span class="at">-n</span> 1000 <span class="st">"</span><span class="va">$file</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="at">-c</span> <span class="st">"@"</span><span class="va">)</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  <span class="bu">echo</span> <span class="st">"</span><span class="va">$count</span><span class="st">"</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. list files ending in 12 or 13</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">NOTE</span><span class="co">: I am assuming you meant this part excluding the _subset_1</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> raw_data/fastq/<span class="pp">*</span><span class="dt">{12</span><span class="op">,</span><span class="dt">13}</span>_subset_1.fastq</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>--2023-11-07 16:54:01--  https://github.com/stephaniehicks/jhustatprogramming2023/tree/main/data/SRR1039508_subset_1.fastq
-Resolving github.com (github.com)... 140.82.114.3
-Connecting to github.com (github.com)|140.82.114.3|:443... connected.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://github.com/stephaniehicks/jhustatprogramming2023/blob/main/data/SRR1039508_subset_1.fastq [following]
---2023-11-07 16:54:01--  https://github.com/stephaniehicks/jhustatprogramming2023/blob/main/data/SRR1039508_subset_1.fastq
-Reusing existing connection to github.com:443.
-HTTP request sent, awaiting response... 200 OK
-Length: 6207 (6.1K) [text/plain]
-Saving to: ‘SRR1039508_subset_1.fastq’
-
-     0K ......                                                100% 15.2M=0s
-
-2023-11-07 16:54:01 (15.2 MB/s) - ‘SRR1039508_subset_1.fastq’ saved [6207/6207]
-
---2023-11-07 16:54:01--  https://github.com/stephaniehicks/jhustatprogramming2023/tree/main/data/SRR1039509_subset_1.fastq
-Resolving github.com (github.com)... 140.82.114.3
-Connecting to github.com (github.com)|140.82.114.3|:443... connected.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://github.com/stephaniehicks/jhustatprogramming2023/blob/main/data/SRR1039509_subset_1.fastq [following]
---2023-11-07 16:54:01--  https://github.com/stephaniehicks/jhustatprogramming2023/blob/main/data/SRR1039509_subset_1.fastq
-Reusing existing connection to github.com:443.
-HTTP request sent, awaiting response... 200 OK
-Length: 6208 (6.1K) [text/plain]
-Saving to: ‘SRR1039509_subset_1.fastq’
-
-     0K ......                                                100% 4.68M=0.001s
-
-2023-11-07 16:54:01 (4.68 MB/s) - ‘SRR1039509_subset_1.fastq’ saved [6208/6208]
-
---2023-11-07 16:54:01--  https://github.com/stephaniehicks/jhustatprogramming2023/tree/main/data/SRR1039512_subset_1.fastq
-Resolving github.com (github.com)... 140.82.114.3
-Connecting to github.com (github.com)|140.82.114.3|:443... connected.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://github.com/stephaniehicks/jhustatprogramming2023/blob/main/data/SRR1039512_subset_1.fastq [following]
---2023-11-07 16:54:01--  https://github.com/stephaniehicks/jhustatprogramming2023/blob/main/data/SRR1039512_subset_1.fastq
-Reusing existing connection to github.com:443.
-HTTP request sent, awaiting response... 200 OK
-Length: 6198 (6.1K) [text/plain]
-Saving to: ‘SRR1039512_subset_1.fastq’
-
-     0K ......                                                100% 3.88M=0.002s
-
-2023-11-07 16:54:02 (3.88 MB/s) - ‘SRR1039512_subset_1.fastq’ saved [6198/6198]
-
---2023-11-07 16:54:02--  https://github.com/stephaniehicks/jhustatprogramming2023/tree/main/data/SRR1039513_subset_1.fastq
-Resolving github.com (github.com)... 140.82.114.3
-Connecting to github.com (github.com)|140.82.114.3|:443... connected.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://github.com/stephaniehicks/jhustatprogramming2023/blob/main/data/SRR1039513_subset_1.fastq [following]
---2023-11-07 16:54:02--  https://github.com/stephaniehicks/jhustatprogramming2023/blob/main/data/SRR1039513_subset_1.fastq
-Reusing existing connection to github.com:443.
-HTTP request sent, awaiting response... 200 OK
-Length: 6198 (6.1K) [text/plain]
-Saving to: ‘SRR1039513_subset_1.fastq’
-
-     0K ......                                                100% 2.57M=0.002s
-
-2023-11-07 16:54:02 (2.57 MB/s) - ‘SRR1039513_subset_1.fastq’ saved [6198/6198]
-
-raw_data/fastq/SRR1039512_subset_1.fastq
-raw_data/fastq/SRR1039513_subset_1.fastq
-grep: SRR1039512_subset_1.fastq: No such file or directory
-head: *.fastq: No such file or directory
-0</code></pre>
+<pre><code>raw_data/fastq/SRR1039512_subset_1.fastq
+raw_data/fastq/SRR1039513_subset_1.fastq</code></pre>
 </div>
 </div>
-<p>Questions 1. step 4 - use the name of the file? cause non of them end in 12/13</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 5. search for strings</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">grep</span> <span class="at">-A</span> 4 <span class="at">-B</span> 2 NNNN raw_data/fastq/SRR1039512_subset_1.fastq</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>DIJJJJJIIIJGHGFHIIIAEEHIIIID@DFHIIJJIGGGCHGIIIAAEHFFFDDD;?BDDD@
+@SRR1039512.24252150/1
+GGTGTTGGACGGTNTNANNNNGNGNNCGGANAGAGNCGAGTTCTCCTACCAGGAGATGNNNGC
++
+HJFGIGIJGHII8#1#0####0#0##0-BB#-5@C#-;?EAEFFFFFFEEDEC??=A######
+@SRR1039512.15382517/1
+AGGAACTACTTGGAGACTTGGATGACATCCTCGTCGATCTCACACTGGACCACGGACTCCACG</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 6. for loop to count @</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> file <span class="kw">in</span> raw_data/fastq/<span class="pp">*</span>.fastq<span class="kw">;</span> <span class="cf">do</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="va">count</span><span class="op">=</span><span class="va">$(</span><span class="fu">head</span> <span class="at">-n</span> 1000 <span class="st">"</span><span class="va">$file</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="at">-c</span> <span class="st">"@"</span><span class="va">)</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="bu">echo</span> <span class="st">"</span><span class="va">$count</span><span class="st">"</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>320
+321
+347
+347</code></pre>
+</div>
+</div>
 </section>
 
 </main>
